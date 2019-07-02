@@ -1,3 +1,4 @@
+using DummyNetCoreApp;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace DummyNetCoreAppTests
@@ -9,6 +10,12 @@ namespace DummyNetCoreAppTests
         public void TestMethod1()
         {
             Assert.AreEqual(1, 0);
+        }
+
+        [TestMethod]
+        public void ReadFileContentShouldBeHelloYellow()
+        {
+            Assert.AreEqual("hello Yellow!", FileReader.Read());
         }
     }
 }
