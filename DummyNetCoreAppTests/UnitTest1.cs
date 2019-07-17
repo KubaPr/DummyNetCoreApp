@@ -8,7 +8,7 @@ namespace DummyNetCoreAppTests
         [TestMethod]
         public void TestMethod1()
         {
-            Assert.AreEqual(1, 1);
+            Assert.AreEqual(1, 0);
         }
     }
 }
